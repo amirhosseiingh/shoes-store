@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+
+        <div id="shipping-choice-box" class="flex flex-row items-center gap-6 mt-5 ml-5">
+            <a href="../checkout-box/checkout.html">
+                <button>
+                    <img class="w-10" src="../../assets/home-icon/Hicon/Bold/Left 1.svg" alt="">
+                </button>
+            </a>
+            <p class="font-bold text-2xl">Shipping Address</p>
+        </div>
+    </header>
+    <main>
+        <div class="relative">
+            <label class="bg-white flex justify-between items-center mx-4 my-4 rounded-3xl shadow-xl p-6">
+                <div class="flex items-center gap-2">
+                    <div class="bg-gray-900 w-12 h-12 rounded-full flex items-center">
+                        <img class="" src="../../assets/box-svgrepo-com.svg" alt="location">
+                    </div>
+                    <div class="ml-2">
+                        <p class="font-semibold text-lg">Economy</p>
+                        <p class="text-sm">Estimated Arrival, jan </p>
+                    </div>
+                </div>
+                
+                    <span class="font-semibold text-xl">$10</span>
+                    <input  type="radio" name="Address" id="">
+                
+            </label>
+            <label class="bg-white flex justify-between items-center mx-4 my-4 rounded-3xl shadow-xl p-6">
+                <div class="flex items-center gap-2">
+                    <div class="bg-gray-900 w-12 h-12 rounded-full flex items-center">
+                        <img class="" src="../../assets/box-svgrepo-com.svg" alt="location">
+                    </div>
+                    <div class="ml-2">
+                        <p class="font-semibold text-lg">Regular</p>
+                        <p class="text-sm">Estimated Arrival, jan </p>
+                    </div>
+                </div>
+                
+                    <span class="font-semibold text-xl">$15</span>
+                    <input  type="radio" name="Address" id="">
+               
+            </label>
+            <label class="bg-white flex justify-between items-center mx-4 my-4 rounded-3xl shadow-xl p-6">
+                <div class="flex items-center gap-2">
+                    <div class="bg-gray-900 w-12 h-12 rounded-full flex items-center">
+                        <img class="" src="../../assets/truck-svgrepo-com (1).svg" alt="location">
+                    </div>
+                    <div class="ml-2">
+                        <p class="font-semibold text-lg">Cargo</p>
+                        <p class="text-sm">Estimated Arrival, jan </p>
+                    </div>
+                </div>
+                
+                    <span class="font-semibold text-xl">$20</span>
+                    <input  type="radio" name="Address" id="">
+                
+            </label>
+            <label class="bg-white flex justify-between items-center mx-4 my-4 rounded-3xl shadow-xl p-6">
+                <div class="flex items-center gap-2">
+                    <div class="bg-gray-900 w-12 h-12 rounded-full flex items-center">
+                        <img class="" src="../../assets/svg/logistics-delivery-truck-in-movement-svgrepo-com.svg" alt="location">
+                    </div>
+                    <div class="ml-2">
+                        <p class="font-semibold text-lg">Express</p>
+                        <p class="text-sm">Estimated Arrival, jan </p>
+                    </div>
+                </div>
+                
+                    <span class="font-semibold text-xl">$30</span>
+                    <input  type="radio" name="Address" id="">
+                
+            </label>
+            <button id="apply-button" class=" fixed bottom-12 bg-black rounded-full mx-14  text-white h-16 text-bold text-xl w-80">
+                    Apply
+            </button>
+        </div>
+    </main>
+    <script src="./chose-shipping.js"></script>
+</body>
+
+</html>

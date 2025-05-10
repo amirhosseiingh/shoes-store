@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <div class="flex justify-between items-center mx-4 my-4">
+            <div class="flex items-center gap-4">
+                <img class="w-4 " src="../../assets/export logo.svg" alt="export logo">
+                <p class="font-bold text-4xl">My Orders</p>
+            </div>
+            <div class="flex gap-4">
+                <button>
+                    <img class="w-10" src="../../assets/search-svgrepo-com (2).svg" alt="">
+                </button>
+                <button>
+                    <img class="w-8" src="../../assets/more-horizontal-circle-svgrepo-com.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="flex justify-around ">
+            <button class=" py-4 border border-white  border-b-zinc-950  w-[50%] justify-center flex font-semibold text-xl  ">Active</button>
+            <button class=" py-4 border border-white  border-b-zinc-950  border-4  border-b-950 font-bold text-3xl w-[50%] justify-center flex font-semibold text-xl ">Completed</button>
+        </div>
+        <div id="active" class="flex flex-col justify-center items-center mx-6 mt-4 max-h-[672px] overflow-y-scroll  ">
+            <div class="flex gap-8 my-4">
+                <div class="flex items-center bg-gray-100 rounded-2xl  ">
+                    <img class="p-2" src="../../assets/shoes-example.svg" alt="">
+                </div>
+                <div class="flex flex-col gap-4">
+                    <p class="font-bold text-2xl"> Air jordan 3 reto</p>
+                    <div class="flex gap-4">
+                        <p>color</p>
+                        <p>black</p>
+                        <p>size=</p>
+                        <p>Qty=</p>
+                    </div>
+                    <div>
+                        <div class="bg-[#f2f2f2] rounded h-6 w-28 flex justify-center ">
+                            <span class="">Completed</span>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 ">
+                        <p class="font-bold text-xl">$125.000</p>
+                        <button class="bg-black text-white font-medium text-xs rounded-full  w-24 p-2">Leave Review</button>
+                    </div>
+                </div>
+            </div> 
+            
+        </div>
+        <div class="fixed bottom-4 w-full bg-white flex flex-row justify-evenly mt-10">
+            <button class="flex flex-col  items-center">
+                <img class="w-6" src="../../assets/home-3-svgrepo-com.svg" alt="">
+                <span class="font-semibold text-xs">Home</span>
+            </button>
+            <button class="flex flex-col  items-center">
+                <img src="../../assets/bag.svg" alt="">
+                <span class="font-semibold text-xs">Cart</span>
+            </button>
+            <button class="flex flex-col  items-center">
+                <img class="w-6" src="../../assets/shopping-cart-svgrepo-com.svg" alt="">
+                <span class="font-semibold text-xs">Orders</span>
+            </button>
+            <button class="flex flex-col  items-center">
+                <img class="" src="../../assets/wallet.svg" alt="">
+                <span class="font-semibold text-xs">Wallet</span>
+            </button>
+            <button class="flex flex-col  items-center ">
+                <img class="" src="../../assets/profileicon.svg" alt="">
+                <span class="font-semibold text-xs">Profile</span>
+            </button>
+        </div>
+    </main>
+</body>
+
+</html>

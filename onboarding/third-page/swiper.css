@@ -1,0 +1,13 @@
+.swiper-container {
+    width: 428px;
+    height: 926px;
+    overflow: hidden;
+}
+.swiper-slide {
+    width: 428px;
+    height: 926px;
+    display: none;
+}
+.swiper-slide.active {
+    display: block;
+}

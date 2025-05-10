@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white">
+    <header>
+        <div class="flex justify-between mx-4 my-4">
+            <div class="flex items-center gap-4">
+                <a href="../../cart/main-card/main-cart.html">
+                    <button>
+                        <img class="w-10" src="../../assets/arrow-left-short.svg" alt="arrow-left">
+                    </button>
+                </a>
+                <p class="font-bold text-3xl">CheckBox</p>
+            </div>
+            <button>
+                <img class="w-8" src="../../assets/more-horizontal-circle-svgrepo-com.svg" alt="more">
+            </button>
+        </div>
+    </header>
+    <main class="h-full">
+        <div class="flex flex-col gap-6 mx-4">
+            <p class="font-bold text-2xl">Shipping Address</p>
+            <div id="address-box" class="flex justify-between bg-white shadow-xl rounded-2xl p-4">
+                <a href="../addres/addres.html">
+                    <button>
+                        <img src="../../assets/edit-svgrepo-com.svg" alt="edit-address">
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <div class="w-[85%] h-0.5 bg-gray-200 mx-8 mt-8"></div>
+        <p class="font-bold text-2xl mx-4 my-4">Order List</p>
+
+        <div id="checkout-list" class="flex flex-col gap-4 p-2 m-2">
+        </div>
+
+        <div class="w-[85%] h-0.5 bg-gray-200 mx-8 my-8"></div>
+
+        <div class="flex flex-col gap-6 mx-4">
+            <p class="font-bold text-2xl">Chose Shipping</p>
+            <div id="shipping-choice-box" class="flex justify-between items-center bg-white shadow-xl rounded-2xl p-3">
+                <div class="flex gap-2 items-center">
+                    <img class="w-12" src="../../assets/truck-svgrepo-com.svg" alt="location">
+                    <p class="font-bold text-2xl">Chose Shipping Type</p>
+                </div>
+                <a href="../shipping/chose-shipping.html">
+                    <button>
+                        <img class="w-10" src="../../assets/arrow-next-svgrepo-com.svg" alt="edit-address">
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <div class="flex flex-col mx-4">
+            <div class="flex flex-col mt-4">
+                <p class="font-bold text-2xl">Promo Code</p>
+                <div id="promoContainer" class="flex justify-between items-center"> <input type="text" id="promoInput"
+                        placeholder="Enter Promo Code"
+                        class="bg-gray-100 text-gray-900 text-xl rounded-2xl p-2 w-80 h-16 shadow-xl">
+                    <button id="toggleSelect" class=""> 
+                        <img class="w-24" src="../../assets/plus-circle-svgrepo-com.svg"alt="add-select"> 
+                    </button>
+                </div>
+                <select id="promoSelect" class="hidden mt-4">
+                    <option class="text-lg" value="20">$20</option>
+                    <option class="text-lg" value="15">$15</option>
+                    <option class="text-lg" value="10">$10</option>
+                </select>
+            </div>
+            <div class="w-[85%] h-0.5 bg-gray-200 mx-8 my-8"></div>
+            <div class="w-96  bg-white mx-4 my-2 p-4 flex flex-col justify-arround gap-4 my-8 shadow-xl">
+                <div class="flex justify-between">
+                    <p class="text-gray-700">Amount</p>
+                    <p id="amount" class="text-gray-900"></p>
+                </div>
+                <div class="flex justify-between">
+                    <p class="text-gray-700">Shipping</p>
+                    <p  id="shipping" class="text-gray-900"></p>
+                </div>
+                <div class="flex justify-between">
+                    <p class="text-gray-700">Promo</p>
+                    <p id="promo" class="text-gray-900"></p>
+                </div>
+                <div class="flex justify-between">
+                    <p class="text-gray-700">Total</p>
+                    <p id="total" class="text-gray-900"></p>
+                </div>
+            </div>
+            <a href="../payment/payment.html" class="bg-black shadow-2xl flex h-20 my-8 rounded-full text-white items-center justify-center font-bold text-xl">
+                Continue to Payment <img class="w-20" src="../../assets/arrow-right-svgrepo-com.svg" alt="ContinueToPayment">
+            </a>
+
+        </div>
+    </main>
+    <script src="./checkout.js"></script>
+</body>
+
+</html>

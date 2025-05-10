@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="">
+        <div class="flex flex-row gap-3 my-3 ml-6 items-center l bg-white">
+            <a href="../main-home/home.html">
+                <img src="../../assets/arrow-left-short.svg" alt="">
+            </a>
+            <p class="font-semibold text-xl">Most Popular</p>
+        </div>
+        <div class="filter-swiper w-full mt-[20px] ">
+            <div class="flex gap-2 overflow-x-auto scrollbar-hide my-2 py-3 cursor-pointer mx-4">
+                <button onclick="getProducts()"
+                    class="border border-black flex items-center w-full px-4 py-4 rounded-3xl h-8 font-semibold text-base hover:bg-black hover:text-white whitespace-nowrap">
+                    All
+                </button>
+                <button id="nike-button" onclick="handleFilterBrand('nike-button' , 'NIKE')"
+                    class="border border-black flex items-center w-full px-4 py-4 rounded-3xl h-8 font-semibold text-base hover:bg-black hover:text-white whitespace-nowrap">
+                    Nike
+                </button>
+                <button id="adidas-button" onclick="handleFilterBrand('adidas-button' , 'ADIDAS')"
+                    class="border border-black flex items-center w-full px-4 py-4 rounded-3xl h-8 font-semibold text-base hover:bg-black hover:text-white whitespace-nowrap">
+                    Adidas
+                </button>
+                <button id="puma-button" onclick="handleFilterBrand('puma-button' , 'PUMA')"
+                    class="border border-black flex items-center w-full px-4 py-4 rounded-3xl h-8 font-semibold text-base hover:bg-black hover:text-white whitespace-nowrap">
+                    Puma
+                </button>
+                <button id="asics-button" onclick="handleFilterBrand('asics-button' , 'ASICS')"
+                    class="border border-black flex items-center w-full px-4 py-4 rounded-3xl h-8 font-semibold text-base hover:bg-black hover:text-white whitespace-nowrap">
+                    Asics
+                </button>
+                <button id="reebok-button" onclick="handleFilterBrand('reebok-button' , 'REEBOK')"
+                    class="border border-black flex items-center w-full px-4 py-4 rounded-3xl h-8 font-semibold text-base hover:bg-black hover:text-white whitespace-nowrap">
+                    Reebok
+                </button>
+                <button id="newBalance-button" onclick="handleFilterBrand('newBalance-button' , 'NEW BALANCE')"
+                    class="border border-black flex items-center w-full px-4 py-4 rounded-3xl h-8 font-semibold text-base hover:bg-black hover:text-white whitespace-nowrap">
+                    New Balance
+                </button>
+            </div>
+        </div>
+        <div id="mostPopular-list" class="grid grid-cols-2 gap-4 mx-6  max-h-[880px] overflow-y-scroll  ">
+
+        </div>
+    </div>
+    <script src="./mostPopular.js"></script>
+</body>
+
+</html>

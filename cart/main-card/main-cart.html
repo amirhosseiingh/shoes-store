@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="fixed top-0 left-0 right-0 h-20 px-4 bg-white flex justify-evenly gap-52 items-center ">
+            <div class="flex items-center gap-5">
+                <img class="w-4" src="../../assets/export logo.svg" alt="">
+                <p class="font-bold text-3xl">My Cart</p>
+            </div>
+            <button>
+                <img class="w-8" src="../../assets/home-icon/search.svg" alt="">
+            </button>
+        </div>
+    </header>
+
+    <main class="mt-10 h-full ">
+        <div id="cart-page" class="bg-gradient-to-t from-gray-300  h-[720px] overflow-scroll">
+            <!-- <div class="bg-white m-4 rounded-3xl  flex gap-4 ">
+                <div id="active"
+                    class="flex flex-col justify-center items-center mx-6 mt-4 max-h-[672px] overflow-y-scroll  ">
+                    <div class="flex gap-8 my-4">
+                        <div  class="flex items-center bg-gray-100 rounded-2xl  ">
+                            <img id="image-box-cart" class="p-2" src="../../assets/shoes-example.svg" alt="">
+                        </div>
+                        <div class="flex flex-col gap-4">
+                            <div class="flex justify-between items-center">
+                                <p id="name-product" class="font-bold text-xl"> Air jordan 3 reto</p>
+                               <a href="../remove-card/remove-card.html">
+                                <button>
+                                    <img class="w-5" src="../../assets/home-icon/bin.svg" alt="remove">
+                                </button>
+                               </a>
+                            </div>
+                            <div class="flex gap-4 ">
+                                <p id="color-product">color</p>
+                                <p id="name-color-product"></p>
+                                <p id="size-product"></p>
+                            </div>
+                            <div class="flex items-center gap-4 ">
+                                <span id="price-product" class="font-bold text-xl">$125.25</span>
+                                <div class="flex items-center gap-4 my-2  ">
+                                    <div class="flex items-center  gap-3">
+                                        <div class="flex bg-[#ececed] justify-between w-[90px] rounded-[30px]">
+                                            <button  id="quantityNegative"
+                                                class="rounded-[30px] font-medium text-[17px] py-1 pl-4">-</button>
+                                            <input id="quantityInput" type="number"
+                                                class="bg-black w-full bg-opacity-0 text-center outline-none text-[17px]"
+                                                value="0">
+                                            <button id="quantityPlus"
+                                                class="rounded-[30px] font-medium text-[17px] py-1 pr-4">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+
+    </main>
+
+
+    <!-- remove box -->
+        <div id="remove-box-modal" class="relative z-30 hidden">
+            <div class="fixed bottom-0 w-full bg-white flex flex-col justify-center mt-10 rounded-t-3xl">
+                <div class="bg-gray-900 w-[10%] h-0.5 ml-48 mt-4"></div>
+                <p class="text-center text-black font-bold text-3xl mt-2">Remove from Cart?</p>
+                <div class="bg-white m-4 rounded-3xl flex gap-4">
+                    <div id="modal-content" class="flex flex-col justify-center items-center mx-6 mt-4 max-h-[672px] overflow-y-scroll">
+                    </div>
+                </div>
+                <div class="bg-gray-400 w-[90%] h-0.5 ml-5"></div>
+                <div class="flex justify-center gap-12 my-8">
+                    <button class="bg-gray-300 font-semibold text-lg w-36 p-4 rounded-full cancel-button">Cancel</button>
+                    <button id="confirm-remove"   class="bg-black font-semibold text-white text-lg w-36 p-4 rounded-full shadow-md">Yes, Remove</button>
+                </div>
+            </div>
+        </div>
+
+     
+
+    <footer id="footer">
+        <div class="fixed bottom-0 w-full h-48  bg-white flex flex-col justify-evenly mt-10 rounded-t-xl border border-gray-400">
+            <div class="flex justify-around mt-4">
+                <div id="total-price-container">
+                    <p class="text-md text-gray-400 font-semibold">total ptice</p>
+                    <p id="total-price-all" class="text-2xl font-bold"></p>
+                </div>
+                <a href="../../checkout/checkout-box/checkout.html">
+                    <button id="checkOutButton" class="flex items-center justify-center bg-black text-white w-64 rounded-3xl text-xl shadow-2xl">
+                        <p>Checkout</p> <img src="../../assets/arrow-right-svgrepo-com.svg" alt="arrow-right">
+                    </button>
+                </a>
+            </div>
+            <div class="flex flex-row justify-evenly mt-10 mb-3 ">
+                <a href="../../home/main-home/home.html">
+                    <button class="flex flex-col  items-center">
+                        <img class="w-6" src="../../assets/home-icon/home.png" alt="">
+                        <span class="font-semibold text-xs">Home</span>
+                    </button>
+                </a>
+                <button class="flex flex-col  items-center">
+                    <img class="w-6" src="../../assets/home-icon/cart-select.png" alt="">
+                    <span class="font-semibold text-xs">Cart</span>
+                </button>
+                <a href="../../order/active/active.html">
+                    <button class="flex flex-col  items-center">
+                        <img src="../../assets/home-icon/orders.svg" alt="">
+                        <span class="font-semibold text-xs">Orders</span>
+                    </button>
+                </a>
+                <button class="flex flex-col  items-center">
+                    <img class="" src="../../assets/wallet.svg" alt="">
+                    <span class="font-semibold text-xs">Wallet</span>
+                </button>
+                <button class="flex flex-col  items-center ">
+                    <img class="" src="../../assets/profileicon.svg" alt="">
+                    <span class="font-semibold text-xs">Profile</span>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <div id="overlay" class="hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-20"></div>
+
+    <script src="./main-card.js"></script>
+</body>
+
+</html>

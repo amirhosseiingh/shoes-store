@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="w-[428px] max-h-[920px] flex flex-col   ">
+        <a href="../onboarding/first-page/first-page.html">
+            <button id="backToOnboard">
+                <img class="mx-[24px] my-[12px]" src="../assets/arrow-left-short.svg" alt="arrow-left-short">
+            </button>
+        </a>
+        <div class="flex justify-center items-center mt-[76px] mb-[118px]">
+            <img src="../assets/export logo.svg" alt="export logo">
+        </div>
+        <p class="text-[32px] font-semibold flex justify-center text-[#152536]">Login to Your Account</p>
+        <div class="flex flex-col gap-5">
+            <div class="flex justify-center mt-[48px] relative ">
+                <img src="../assets/Vector.png" alt="Envelope Icon" class="absolute left-9 top-1/2 transform -translate-y-1/2 w-4 h-4">
+                <input id="email-input" class="bg-[#fafafa] w-[380px] h-[37px] pl-9 pr-4 rounded" type="email" placeholder="Email">
+            </div>
+            <div class="flex justify-center  relative ">
+                <div class="relative w-[380px]">
+                    <img src="../assets/lock.png" alt="Lock Icon" class="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4">
+                    <input id="password" class="bg-[#fafafa] w-full h-[37px] pl-9 pr-12 rounded" type="password" placeholder="Password">
+                    <img src="../assets/eye-password.png" alt="Eye Icon" class="absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4 cursor-pointer">
+                </div>
+            </div>
+            
+        </div>
+        <div class="flex justify-center items-center mt-[40px] gap-2">
+            <input type="checkbox">
+            <label for="Remember me">Remember me</label>
+        </div>
+        <div id="error-message" class="text-red-500 text-center mt-4"></div>
+        <div class="flex justify-center relative">
+            <button id="sign-in" class="absolute top-40 w-[380px] h-[47px] bg-black opacity-65 text-white flex items-center justify-center rounded-[30px]  mb-[40px] hover:bg-black hover:opacity-100">
+                Sign in
+            </button>
+              
+        </div>
+    </div>
+    <script src="./logIn.js" type="module"></script>
+</body>
+</html>

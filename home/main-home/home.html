@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="overflow-hidden">
+    <header>
+        <div class="flex flex-row justify-between  mx-[24px] items-center pr-4">
+            <div class="flex gap-4 m-4  ">
+                <img class="w-[48px] h-[48px] rounded-full " src="../../assets/user-photo.jpg" alt="home-header">
+                <div class="flex flex-col">
+                    <p class="font-medium text-[#757475]">Good Morning 👋</p>
+                    <p id="user-name" class="font-bold text-lg  "></p>
+                </div>
+            </div>
+            <div class="flex gap-4 ">
+                <img class="w-[24px] h-[21px] " src="../../assets/alarm-header.png"></img>
+                
+                <a href="../wish-list/wish-list.html">
+                    <button>
+                        <img class="w-[24px] h-[24px] " src="../../assets/heart-header.svg"></img>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="flex justify-center mt-2  relative pr-4 ">
+        <a href="../../search/main-search/main-search.html"> <img src="../../assets/zarebin-header.png" alt="Envelope Icon"
+            class="absolute left-9 top-1/2 transform -translate-y-1/2 w-4 h-4">
+        </a>
+        <input class="bg-[#fafafa] w-[380px] h-[37px] pl-12  rounded " type="email" placeholder="Email">
+    </div>
+    <div class="grid grid-cols-4 mx-6 mt-3 gap-5">
+        <div class="flex flex-col justify-between items-center w-[60px] h-[91px] gap-1">
+            <a href="../brand/brand.html?brand=NIKE" >
+                <button class="bg-[#ECECEC] border rounded-full w-14 h-14  ">
+                    <img class="px-4 py-5" src="../../assets/nike.svg" alt="">
+                </button>
+            </a>
+            <p class="font-semibold text-sm  p-3">Nike</p>
+        </div>
+        <div class="flex flex-col justify-between items-center w-[60px] h-[91px] gap-1">
+            <a href="../brand/brand.html?brand=ADIDAS">
+                <button class="bg-[#ECECEC] border rounded-full w-14 h-14  ">
+                    <img class="px-4 py-5" src="../../assets/addidas.svg" alt="">
+                </button>
+            </a>
+            <p class="font-semibold text-sm  p-3">Adidas</p>
+        </div>
+        <div class="flex flex-col justify-between items-center w-[60px] h-[91px] gap-1">
+            <a href="../brand/brand.html?brand=PUMA">
+                <button class="bg-[#ECECEC] border rounded-full w-14 h-14  ">
+                    <img class="px-4 py-5" src="../../assets/puma.svg" alt="">
+                </button>
+            </a>
+            <p class="font-semibold text-sm  p-3">Puma</p>
+        </div>
+        <div class="flex flex-col justify-between items-center  w-[60px] h-[91px] gap-1">
+            <a href="../brand/brand.html?brand=ASICS">
+                <button class="bg-[#ECECEC] border rounded-full w-14 h-14  ">
+                    <img class="px-4 py-5" src="../../assets/asics.svg" alt="">
+                </button>
+            </a>
+            <p class="font-semibold text-sm  p-3">Asics</p>
+        </div>
+        <div class="flex flex-col justify-between items-center w-[60px] h-[91px] gap-1">
+            <a href="../brand/brand.html?brand=REEBOK">
+                <button class="bg-[#ECECEC] border rounded-full w-14 h-14  ">
+                    <img class="px-4 py-5" src="../../assets/reebok.svg" alt="">
+                </button>
+            </a>
+            <p class="font-semibold text-sm  p-3">Reebok</p>
+        </div>
+        <div class="flex flex-col justify-between items-center w-[60px] h-[91px] gap-1">
+            <a href="../brand/brand.html?brand=NEW BALANCE">
+                <button class="bg-[#ECECEC] border rounded-full w-14 h-14 flex items-center justify-center">
+                    <img class="px-4 py-5" src="../../assets/new balance.svg" alt="">
+                </button>
+            </a>
+            <p class="font-semibold text-sm p-3 max-w-20 overflow-hidden text-ellipsis whitespace-nowrap">New Balance
+            </p>
+        </div>
+
+        <div class="flex flex-col justify-between items-center w-[60px] h-[91px] gap-1">
+            <a href="../brand/brand.html?brand=CONVERSE">
+                <button class="bg-[#ECECEC] border rounded-full w-14 h-14  ">
+                    <img class="px-4 py-5" src="../../assets/converse.svg" alt="">
+                </button>
+            </a>
+            <p class="font-semibold text-sm  p-3">Converse</p>
+        </div>
+        <div class="flex flex-col justify-between items-center w-[60px] h-[91px] gap-1">
+            <a href="../brand/brand.html?brand=MORE">
+                <button class="bg-[#ECECEC] border rounded-full w-14 h-14  ">
+                    <img class="px-4 py-5" src="../../assets/more.svg" alt="">
+                </button>
+            </a>
+            <p class="font-semibold text-sm  p-3">More...</p>
+        </div>
+    </div>
+    <div class="mt-4">
+        <div class="flex justify-between mx-6 ">
+            
+            <a href="../most-popular/mostPopular.html">
+                <p class="font-semibold text-xl">Most Popular</p>
+            </a>
+            <button class="font-semibold text-base">see All</button>
+        </div>
+        <div class="filter-swiper w-full mt-[20px] ">
+            <div class="flex gap-2 overflow-x-auto scrollbar-hide my-2 py-3 cursor-pointer mx-4">
+                <button  onclick="getProducts()"
+                    class="border border-black flex items-center w-full px-4 py-4 rounded-3xl h-8 font-semibold text-base hover:bg-black hover:text-white whitespace-nowrap">
+                    All
+                </button>
+                <button id="nike-button" onclick="handleFilterBrand('nike-button' , 'NIKE')"
+                    class="border border-black flex items-center w-full px-4 py-4 rounded-3xl h-8 font-semibold text-base hover:bg-black hover:text-white whitespace-nowrap">
+                    Nike
+                </button>
+                <button id="adidas-button" onclick="handleFilterBrand('adidas-button' , 'ADIDAS')"
+                    class="border border-black flex items-center w-full px-4 py-4 rounded-3xl h-8 font-semibold text-base hover:bg-black hover:text-white whitespace-nowrap">
+                    Adidas
+                </button>
+                <button id="puma-button" onclick="handleFilterBrand('puma-button' , 'PUMA')"
+                    class="border border-black flex items-center w-full px-4 py-4 rounded-3xl h-8 font-semibold text-base hover:bg-black hover:text-white whitespace-nowrap">
+                    Puma
+                </button>
+                <button id="asics-button" onclick="handleFilterBrand('asics-button' , 'ASICS')"
+                    class="border border-black flex items-center w-full px-4 py-4 rounded-3xl h-8 font-semibold text-base hover:bg-black hover:text-white whitespace-nowrap">
+                    Asics
+                </button>
+                <button id="reebok-button" onclick="handleFilterBrand('reebok-button' , 'REEBOK')"
+                    class="border border-black flex items-center w-full px-4 py-4 rounded-3xl h-8 font-semibold text-base hover:bg-black hover:text-white whitespace-nowrap">
+                    Reebok
+                </button>
+                <button id="newBalance-button" onclick="handleFilterBrand('newBalance-button' , 'NEW BALANCE')"
+                    class="border border-black flex items-center w-full px-4 py-4 rounded-3xl h-8 font-semibold text-base hover:bg-black hover:text-white whitespace-nowrap">
+                    New Balance
+                </button>
+            </div>
+        </div>
+        <div id="home-list" class="grid grid-cols-2 gap-4 mx-6 mt-4 mb-8 max-h-[390px] overflow-y-auto   ">
+        </div>
+    </div>
+    <div class="fixed bottom-0 w-full bg-white flex flex-row justify-evenly mt-10">
+        <button class="flex flex-col  items-center">
+            <img src="../../assets/house-door-fill.svg" alt="">
+            <span class="font-semibold text-xs">Home</span>
+        </button>
+        <a href="../../cart/main-card/main-cart.html">
+            <button class="flex flex-col  items-center">
+                <img src="../../assets/bag.svg" alt="">
+                <span class="font-semibold text-xs">Cart</span>
+            </button>
+        </a>
+        <a href="../../order/active/active.html">
+            <button class="flex flex-col  items-center">
+                <img src="../../assets/charkh kharid.svg" alt="">
+                <span class="font-semibold text-xs">Orders</span>
+            </button>
+        </a>
+        <button class="flex flex-col  items-center">
+            <img class="" src="../../assets/wallet.svg" alt="">
+            <span class="font-semibold text-xs">Wallet</span>
+        </button>
+        <button class="flex flex-col  items-center ">
+            <img class="" src="../../assets/profileicon.svg" alt="">
+            <span class="font-semibold text-xs">Profile</span>
+        </button>
+    </div>
+    </div>
+    <script src="./home.js" ></script>
+</body>
+
+</html>

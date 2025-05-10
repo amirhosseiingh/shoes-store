@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <div class="flex justify-between mx-4 my-2">
+            <div class="flex flex-row items-center gap-4">
+                <a href="../checkout-box/checkout.html">
+                    <img class="w-10" src="../../assets/home-icon/Hicon/Bold/Left 1.svg" alt="">
+                </a>
+                <p class="font-bold text-2xl">Payment Methods</p>
+            </div>
+            <button>
+                <img src="../../assets/plus-circle-svgrepo-com.svg" alt="">
+            </button>
+        </div>
+    </header>
+    <main>
+        <div class="relative">
+            <p class="font-semibold  text-gray-700 mx-8 my-4">Select the payment method you want to use</p>
+            <label class="bg-white flex justify-between items-center mx-4 my-4 rounded-3xl shadow-xl p-6">
+                <div class="flex items-center gap-2">
+                    <img class="w-12" src="../../assets/wallet-svgrepo-com.svg" alt="wallet">
+                    <p class="font-bold text-2xl">My Wallet</p>
+                </div>
+                <div class="flex gap-2">
+                    <span class="text-gray-900">$9.379</span>
+                    <input type="radio" name="Address" id="" >
+                </div>
+            </label>
+            <label class="bg-white flex justify-between items-center mx-4 my-4 rounded-3xl shadow-xl p-5">
+                <div class="flex items-center">
+                    <img class="w-12" src="../../assets/paypal-svgrepo-com.svg" alt="paypal">
+                    <p class="font-bold text-2xl">PayPal</p>
+                </div>
+                <div class="flex gap-2">
+                    <span class="text-gray-900">$9.379</span>
+                    <input type="radio" name="Address" id="" >
+                </div>
+            </label>
+            <label class="bg-white flex justify-between items-center mx-4 my-4 rounded-3xl shadow-xl p-6">
+                <div class="flex items-center gap-2">
+                    <img class="w-10" src="../../assets/google-color-svgrepo-com.svg" alt="wallet">
+                    <p class="font-bold text-2xl">Google</p>
+                </div>
+                <div class="flex gap-2">
+                    <span class="text-gray-900">$9.379</span>
+                    <input class="" type="radio" name="Address" id="" >
+                </div>
+            </label>
+            <label class="bg-white flex justify-between items-center mx-4 my-4 rounded-3xl shadow-xl p-6">
+                <div class="flex items-center gap-2">
+                    <img class="w-10" src="../../assets/apple-173-svgrepo-com.svg" alt="wallet">
+                    <p class="font-bold text-2xl">Apple Pay</p>
+                </div>
+                <div class="flex gap-2">
+                    <span class="text-gray-900">$9.379</span>
+                    <input type="radio" name="Address" id="" >
+                </div>
+            </label>
+            <label class="bg-white flex justify-between items-center mx-4 my-4 rounded-3xl shadow-xl p-6">
+                <div class="flex items-center gap-2">
+                    <img class="w-10" src="../../assets/mastercard-svgrepo-com.svg" alt="wallet">
+                    <p class="font-bold text-xl">.... .... .... 1447</p>
+                </div>
+                <div class="flex gap-2">
+                    <span class="text-gray-900">$9.379</span>
+                    <input type="radio" name="Address" id="" >
+                </div>
+            </label>
+            
+            
+                <button id="confirm-payment" class=" fixed bottom-10 bg-black rounded-full mx-14  text-white h-16 text-bold text-xl w-80">
+                    Confirm Payment
+                </button>
+            
+        </div>
+    </main>
+    <script src="./payment.js"></script>
+</body>
+</html>

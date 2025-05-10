@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./single-page.css">
+</head>
+
+<body class="overflow-hidden">
+    <div id="single-product">
+        <div class="flex flex-col w-[428px] ">
+            <div class="h-96 bg-gray-100 flex justify-center relative">
+                <div>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper" id="swiper-wrapper"></div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+                <a href="../main-home/home.html"><img class="absolute top-4 left-6"
+                        src="../../assets/arrow-left-short.svg" alt="arrow-left"></a>
+            </div>
+        </div>
+        <div class="flex flex-col mx-4 mt-4">
+            <div class="flex justify-between items-center">
+                <div class="flex flex-col gap-3">
+                    <p id="name-product" class="font-bold text-3xl"></p>
+                    <div class="flex flex-row ">
+                        <div class="flex flex-row gap-4 items-center ">
+                            <div class="bg-[#f2f2f2] rounded h-6 w-12 flex justify-center ">
+                                <span class="">6.625</span>
+                            </div>
+                            <img class="w-4 h-4 " src="../../assets/star-half-svgrepo-com (1).svg" alt="">
+                            <span class="text-gray-800">4.6(5.358 reviews)</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button id="wishlist-button">
+                        <img src="../../assets/home-icon/like.svg" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="bg-gray-200 w-full h-0.5 mt-6"></div>
+            <p class="font-bold text-xl mt-3">Description</p>
+            <p class="text-gray-700 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum perspiciatis
+                magnam, cupiditate nihil bland</p>
+            <div class="flex flex-row gap-12">
+                <div class="flex flex-col gap-2">
+                    <p class="font-bold text-xl">Size</p>
+                    <div id="size-box" class="flex gap-2 ml-1">
+                        
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2 max-w-[200px]">
+                    <p class="font-bold text-xl">Color</p>
+                    <div class="max-w-[90%] overflow-x-auto no-scrollbar flex gap-2 ">
+                        <div id="color-box" class="flex gap-2 ml-1 no-scrollbar">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center gap-4 my-8 ml-4 ">
+            <span class="font-bold text-xl">Quantity</span>
+            <div class="flex items-center ml-5 gap-3">
+                <div class="flex bg-[#ececed] justify-between w-[90px] rounded-[30px]">
+                    <button id="quantityNegative" class="rounded-[30px] font-medium text-[17px] py-1 pl-4">-</button>
+                    <input id="quantityInput" type="number"
+                        class="bg-black w-full bg-opacity-0 text-center outline-none text-[17px]" value="0">
+                    <button id="quantityPlus" class="rounded-[30px] font-medium text-[17px] py-1 pr-4">+</button>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gray-200 w-full h-0.5 mt-2"></div>
+        <div class="flex justify-evenly gap-18 mt-8">
+            <div class="flex flex-col gap-2 ">
+                <p class="text-gray-400 text-xl">Total price</p>
+                <p id="item-price" class="font-bold text-3xl">$</p>
+            </div>
+            <button id="addTo-cart" class="bg-black text-white font-bold text-xl rounded-full shadow-xl w-52">Add to cart</button>
+        </div>
+    </div>
+    </div>
+    <script src="./single-pages.js"></script>
+</body>
+
+</html>
